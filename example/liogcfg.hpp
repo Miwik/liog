@@ -71,13 +71,13 @@ liog_create(YELLOW_MSG)
 liog_set(msg_fcolor) = fcolor::yellow;
 liog_end
 
-liog_create(NOINFOS)
+liog_create(NO_HEADER)
 liog_set(msg_prefix) = nullptr;
 liog_set(tag_display) = false;
 liog_set(infos_display) = false;
 liog_end
 
-liog_create(NONEWLINE)
+liog_create(NO_NEWLINE)
 liog_set(msg_append_newline) = false;
 liog_end
 
@@ -85,7 +85,7 @@ liog_end
 // custom messages
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-liog_create(RAW, NOINFOS, NONEWLINE)
+liog_create(RAW, NO_HEADER, NO_NEWLINE)
 liog_end
 
 liog_create(MSG, NO_TAG, NO_INFOS, BLUE_VALUES, DISPLAY_TIME/*, DISPLAY_DATE*/)
